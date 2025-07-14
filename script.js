@@ -23,3 +23,15 @@ const eseguiOperazione = (a, b, operazione) => operazione(a, b);
 
 console.log("Snack 3:", eseguiOperazione(3, 4, sommaCB)); // Output: 7
 console.log("Snack 3:", eseguiOperazione(3, 4, moltiplica)); // Output: 12
+
+// 🏆 Snack 4 - Funzione creaTimer che restituisce un setTimeout
+function creaTimer(tempo) {
+    return function () {
+        setTimeout(() => {
+            console.log("Snack 4: Tempo scaduto!");
+        }, tempo);
+    };
+}
+
+const timer = creaTimer(2000);
+//timer(); Con questo testo il timer
