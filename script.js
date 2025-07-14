@@ -44,3 +44,18 @@ function stampaOgniSecondo(messaggio) {
 }
 
 // stampaOgniSecondo("Ciao");
+
+// 🏆 Snack 6 - Contatore automatico con setInterval
+function creaContatoreAutomatico(intervallo) {
+    return function () {
+        let contatore = 0;
+        setInterval(() => {
+            contatore++;
+            console.log("Snack 6 - Contatore:", contatore);
+        }, intervallo);
+    };
+}
+
+// Esempio di utilizzo
+// const startContatore = creaContatoreAutomatico(1000);
+// startContatore();
