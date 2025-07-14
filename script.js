@@ -107,3 +107,21 @@ function sequenzaOperazioni(operazioni, intervallo) {
 //   () => console.log("Operazione 2"),
 //   () => console.log("Operazione 3")
 // ], 2000);
+
+// 🎯 Snack 10 (Bonus) - Throttler
+function creaThrottler(fn, limite) {
+    let ultimoEseguito = 0;
+
+    return function () {
+        const adesso = Date.now();
+        if (adesso - ultimoEseguito >= limite) {
+            ultimoEseguito = adesso;
+            fn();
+        }
+    };
+}
+
+// Esempio di utilizzo
+const throttledLog = creaThrottler(() => console.log("Snack 10: Eseguito!"), 2000);
+// throttledLog();
+// setTimeout(throttledLog, 2500);
