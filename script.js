@@ -59,3 +59,18 @@ function creaContatoreAutomatico(intervallo) {
 // Esempio di utilizzo
 // const startContatore = creaContatoreAutomatico(1000);
 // startContatore();
+
+// 🏆 Snack 7 - Funzione che ferma un timer dopo un certo tempo
+function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
+    const intervallo = setInterval(() => {
+        console.log("Snack 7:", messaggio);
+    }, tempoAvvio);
+
+    setTimeout(() => {
+        clearInterval(intervallo);
+        console.log("Snack 7: Timer fermato!");
+    }, tempoStop);
+}
+
+// Esempio di utilizzo
+// eseguiEferma("Messaggio", 1000, 5000);
