@@ -35,3 +35,12 @@ function creaTimer(tempo) {
 
 const timer = creaTimer(2000);
 //timer(); Con questo testo il timer
+
+// 🏆 Snack 5 - Funzione stampaOgniSecondo con setInterval
+function stampaOgniSecondo(messaggio) {
+    setInterval(() => {
+        console.log("Snack 5:", messaggio);
+    }, 1000);
+}
+
+// stampaOgniSecondo("Ciao");
