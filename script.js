@@ -90,3 +90,20 @@ function contoAllaRovescia(n) {
 
 // Esempio di utilizzo
 // contoAllaRovescia(5);
+
+// 🎯 Snack 9 (Bonus) - Sequenza di operazioni con ritardo
+function sequenzaOperazioni(operazioni, intervallo) {
+    operazioni.forEach((op, index) => {
+        setTimeout(() => {
+            console.log("Snack 9:");
+            op();
+        }, intervallo * index);
+    });
+}
+
+// Esempio di utilizzo
+// sequenzaOperazioni([
+//   () => console.log("Operazione 1"),
+//   () => console.log("Operazione 2"),
+//   () => console.log("Operazione 3")
+// ], 2000);
