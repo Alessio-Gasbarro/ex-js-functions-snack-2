@@ -74,3 +74,19 @@ function eseguiEferma(messaggio, tempoAvvio, tempoStop) {
 
 // Esempio di utilizzo
 // eseguiEferma("Messaggio", 1000, 5000);
+
+// 🎯 Snack 8 (Bonus) - Conto alla rovescia
+function contoAllaRovescia(n) {
+    const timer = setInterval(() => {
+        if (n > 0) {
+            console.log("Snack 8:", n);
+            n--;
+        } else {
+            console.log("Snack 8: Tempo scaduto!");
+            clearInterval(timer);
+        }
+    }, 1000);
+}
+
+// Esempio di utilizzo
+// contoAllaRovescia(5);
